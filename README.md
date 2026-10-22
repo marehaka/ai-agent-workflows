@@ -2,6 +2,8 @@
 
 English · [日本語](README.ja.md)
 
+[Profile](https://github.com/marehaka/marehaka) · [Print-on-Demand Business Systems — Case Study](https://github.com/marehaka/print-on-demand-business-systems/blob/main/case-study.md)
+
 I develop and use an environment for working with AI agents across software development and research projects. It combines orchestration with knowledge and context management so agents can work with the information and decisions relevant to their task.
 
 ## Agent-First Information Design
@@ -12,7 +14,7 @@ The aim is for an agent to retrieve the information it needs when it needs it an
 
 I design how planning, implementation, and review are assigned to agents, including task boundaries, dependencies, the context passed to each agent, and how results return for review. Records connect this process across tasks and sessions, so later work can refer to earlier judgments and experience. I remain responsible for setting priorities, resolving questions, and making decisions as requirements change.
 
-The [print-on-demand business systems project](https://github.com/marehaka/business-logic-to-ai-tasks) is one setting in which I develop and use these practices.
+The [print-on-demand business systems project](https://github.com/marehaka/print-on-demand-business-systems) is one setting in which I develop and use these practices.
 
 ## Publication Status
 

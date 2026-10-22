@@ -2,6 +2,8 @@
 
 [English](README.md) · 日本語
 
+[プロフィール](https://github.com/marehaka/marehaka/blob/main/README.ja.md) · [Print-on-Demand Business Systems — Case Study](https://github.com/marehaka/print-on-demand-business-systems/blob/main/case-study.ja.md)
+
 ソフトウェア開発や調査など、複数のプロジェクトでAIエージェントと仕事を進める環境を開発・利用しています。オーケストレーションと知識・コンテクスト管理を組み合わせ、それぞれのAgentが担当する仕事に必要な情報と判断の前提を使えるようにしています。
 
 ## Agent-First Information Design
@@ -12,7 +14,7 @@ Agentが必要な時に必要な情報を参照し、適切な作業の文脈を
 
 計画・実装・レビューをAgentにどう分担させるかを設計しています。作業の範囲と依存関係、各Agentへ渡す文脈、結果をレビューへ戻す流れまでを扱います。記録を通じてタスクやセッションをつなぎ、次の仕事が過去の判断や経験を参照できるようにしています。要件の変化に応じた優先順位の設定、疑問の解消、判断は私が担います。
 
-[Print-on-Demandサービスの業務システム](https://github.com/marehaka/business-logic-to-ai-tasks/blob/main/README.ja.md)は、この方法を開発・利用している現場の一つです。
+[Print-on-Demandサービスの業務システム](https://github.com/marehaka/print-on-demand-business-systems/blob/main/README.ja.md)は、この方法を開発・利用している現場の一つです。
 
 ## Publication Status
 
