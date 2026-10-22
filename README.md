@@ -2,24 +2,34 @@
 
 English · [日本語](README.ja.md)
 
-[Profile](https://github.com/marehaka/marehaka) · [Print-on-Demand Business Systems — Case Study](https://github.com/marehaka/print-on-demand-business-systems/blob/main/case-study.md)
+[Profile](https://github.com/marehaka/marehaka) · [Business Systems](https://github.com/marehaka/print-on-demand-business-systems) · [Case Study](case-study.md)
 
-I develop and use an environment for working with AI agents across software development and research projects. It combines orchestration with knowledge and context management so agents can work with the information and decisions relevant to their task.
+I develop and use an environment for working with AI agents on long-running projects. It supports task coordination, structured knowledge, and context retrieval so an agent starting a new session can understand earlier decisions, their reasons, and unresolved questions before continuing the work.
 
-## Agent-First Information Design
+**My Contribution:** Problem and requirements analysis, information and workflow design, implementation with AI agents, review, and operational improvement  
+**Core Tools:** Python, SQLite, JSONL, Markdown, Git, and Claude Code skills and hooks  
+**Context:** Development for my own ongoing work, growing from experiments started in 2025
 
-The aim is for an agent to retrieve the information it needs when it needs it and assemble an appropriate working context. I structure business knowledge, work records, decisions and their reasoning, open questions, and lessons for machine use. Summaries and diagrams provide an accessible view for people, while detailed records retain definitions, sources, and discussion history. SQLite-based retrieval helps agents find relevant material.
+## The Problem
 
-## Orchestration and Continuity
+In long-running development, a new agent could miss the reasoning behind a decision, implement against an outdated assumption, or repeat work that had already been discussed. Saving conversations and decisions did not ensure that the relevant information would be retrieved and used in the next task.
 
-I design how planning, implementation, and review are assigned to agents, including task boundaries, dependencies, the context passed to each agent, and how results return for review. Records connect this process across tasks and sessions, so later work can refer to earlier judgments and experience. I remain responsible for setting priorities, resolving questions, and making decisions as requirements change.
+## What I Built
 
-The [print-on-demand business systems project](https://github.com/marehaka/print-on-demand-business-systems) is one setting in which I develop and use these practices.
+- **Context and knowledge:** I separate project-specific information from shared procedures and structure decisions, reasons, open questions, and lessons. Retrieval and references to original conversations give agents a way to recover the relevant background.
+- **Recording and retrieval:** I developed a dedicated Recorder to separate record production from the agent doing the work. Extraction, checks, comparison with existing records, and writing are distinct steps, connected to SQLite-based retrieval.
+- **Work coordination:** I define task scope, dependencies, implementation and review responsibilities, and when a decision should return to me. I set priorities and resolve open decisions, while revising roles and procedures in response to operational problems.
 
-## Publication Status
+![Original conversations become structured records and searchable context. Current requirements and human judgment also inform the task.](assets/context-path.svg)
 
-The detailed case study and new examples are being revised. Earlier documents and samples have been withdrawn from the current version of this repository while that work is prepared.
+## What Has Changed
 
-## License
+Explicitly asking agents to consult earlier decisions has helped me recover context and continue work. Repeated mistakes and retrieval gaps remained, leading me to redesign the record structure and processing pipeline. The revised Recorder was formally adopted in this development environment in October 2026.
 
-MIT. See [LICENSE](LICENSE).
+I am now examining reuse in actual tasks and the effort needed to maintain the system. Sustained reductions in repeated mistakes, time spent, or total cost have not yet been demonstrated.
+
+The [Case Study](case-study.md) explains how the methods changed around a consistent purpose, the Recorder design, and the division of work and decisions. The [print-on-demand business systems project](https://github.com/marehaka/print-on-demand-business-systems/blob/main/case-study.md) is one setting where I use related context-management practices.
+
+## Scope and License
+
+This repository is a case study of the design and practice. It does not contain the implementation, raw conversations, or private work records. MIT. See [LICENSE](LICENSE).
